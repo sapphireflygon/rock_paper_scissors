@@ -19,7 +19,7 @@ def play_the_game(player1choice, player2choice):
 def two_player_input():
     return render_template('index.html', title="2 Player Game", choices_list=choices_list)
 
-@app.route('/play', methods=["POST"])
+@app.route('/2players/play', methods=["POST"])
 def two_player_play_game():
     player1_name = request.form["player1_name"]
     player1_choice = request.form["player1_choice"]
