@@ -1,0 +1,22 @@
+{% extends "home.html" %}
+
+{% block content %}
+
+<section class="rules">
+    <h3>Rules of the Game</h3>
+    <p>
+        Rock, Paper, Scissors is a very straightforward game, and easy to learn if you've never played before. Here there are two players playing against each other. Each player must input their name, and their choice of either rock, paper, or scissors. The hierarchy is as follows:
+    </p>
+    <ul>
+        <li>Rock crushes scissors</li>
+        <li>Scissors cuts paper</li>
+        <li>Paper covers rock</li>
+    </ul>
+    <p>Note that if one of the players fails to choose a valid option, the game will ask you to play again and choose one of these three options.</p>
+    <h4>GOOD LUCK!</h4>
+</section>
+<button type="return">
+    <a href="/2players">Click here to play with 2 players!</a>
+</button>
+
+{% endblock %}

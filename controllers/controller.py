@@ -15,6 +15,10 @@ def play_the_game(player1choice, player2choice):
     result = play_game(player1, player2)
     return render_template('result.html', title="Results are in!", result=result, player1=player1, player2=player2)
 
+@app.route('/rules')
+def rules():
+    return render_template('rules.html')
+
 @app.route('/2players')
 def two_player_input():
     return render_template('index.html', title="2 Player Game", choices_list=choices_list)
